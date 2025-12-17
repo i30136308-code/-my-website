@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 1: Вирівнювання елементів по центру</title>
+    <style>
+        /* 2. Для тега body задайте наступні властивості: висота 100vh, вирівнювання дочірніх елементів по центру як по вертикалі так і горизонталі */
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center; /* Центрування по горизонталі */
+            align-items: center; /* Центрування по вертикалі */
+            margin: 0; /* Видаляємо зовнішні відступи браузера */
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Додатковий фон для body */
+        }
+
+        /* 3. Для контейнера з класом .container задайте такі властивості: */
+        .container {
+            /* Вирівнювання дочірніх елементів по центру як по вертикалі так і горизонталі */
+            display: flex;
+            justify-content: center; /* Центрування .box по горизонталі всередині .container */
+            align-items: center; /* Центрування .box по вертикалі всередині .container */
+            
+            width: 50%; /* Ширина контейнера 50% */
+            height: 30%; /* Висота контейнера 30% */
+            background-color: lightblue; /* Колір фону lightblue */
+            
+            border-radius: 8px; /* Додатковий стиль для кращого вигляду */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 4. Для контейнерів з класом .box задайте такі властивості: */
+        .box {
+            /* Вирівнювання дочірніх елементів по центру як по вертикалі так і горизонталі */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            width: 50px; /* Ширина контейнера 50px */
+            height: 50px; /* Висота контейнера 50px */
+            background-color: coral; /* Колір фону coral */
+            margin: 10px; /* Зовнішні відступи 10px */
+            font-size: 28px; /* Розмір тексту 28px */
+            color: white; /* Колір тексту білий */
+            
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>
